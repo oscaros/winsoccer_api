@@ -16,6 +16,14 @@ class Api extends CI_Controller {
 		echo json_encode($data->result_array());
 	}
 
+
+   function fetch_all_posts()
+	{
+		$data = $this->api_model->fetch_all_posts();
+		echo json_encode($data->result_array());
+	}
+
+   
 	function insert()
 	{
 		$this->form_validation->set_rules('first_name', 'First Name', 'required');

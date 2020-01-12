@@ -12,7 +12,7 @@ class Api_model extends CI_Model
    function fetch_all_posts()
 	{
 		$this->db->order_by('id', 'DESC');
-		return $this->db->get('posts');
+		return $this->db->get('post');
 	}
 
 
